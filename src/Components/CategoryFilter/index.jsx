@@ -22,7 +22,7 @@ function CategoryFilter ({setSelected}) {
                 <option  value='books'>All Books</option>
                 <option  value='fives'>Highest Rated Books</option>
                 {categories.map((category, i) => {
-                    return <option key={i}>{category.genre_1}</option>
+                    return <option value={category.genre_1} key={i}>{category.genre_1}</option>
                 })}
             </select>
         </div>

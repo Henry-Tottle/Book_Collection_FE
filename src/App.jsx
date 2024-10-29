@@ -26,13 +26,11 @@ function App() {
           <Header/>
           <div>
               <CategoryFilter setSelected={setSelected}/>
-              <SubHeader text='Your whole library: '/>
+              {selected === 'fives' && <SubHeader text='Your highest rated reads:' />}
+              {selected === 'books' && <SubHeader text='Your whole library: '/>}
           </div>
           <div>
               <BookDisplayArea books={books}/>
-          </div>
-          <div>
-              <SubHeader text='Highest rated'/>
           </div>
 
       </div>
